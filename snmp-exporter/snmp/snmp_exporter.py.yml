@@ -1,0 +1,6 @@
+---
+version: 3
+user: 'my_snmp_user'
+host: 'my-snmp-server-host.example.com'
+check_interval: 10
+listen_port: 9116

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  snmp-exporter:
+    image: shalb/prometheus-snmp-exporter:0.0.1
+    volumes:
+     #- ./snmp-exporter/snmp/snmp_exporter.py:/opt/snmp/snmp_exporter.py
+      - ./snmp-exporter/snmp/snmp_exporter.py.yml:/opt/snmp/snmp_exporter.py.yml
+     #- ./snmp-exporter/mibs:/home/my_user/.snmp/mibs
+    restart: always
+   #command: ["--log_level", "DEBUG"]
+    ports:
+      - "9116:9116"
+

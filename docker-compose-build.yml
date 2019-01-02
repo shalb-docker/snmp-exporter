@@ -1,0 +1,7 @@
+version: '3'
+services:
+  snmp-exporter:
+    build:
+      context: ./
+    image: shalb/prometheus-snmp-exporter:0.0.1
+
